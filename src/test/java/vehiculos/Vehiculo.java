@@ -98,4 +98,11 @@ public class Vehiculo {
 		Vehiculo.cantidadVehiculos = cantidadVehiculos;
 	}
 	
+	
+	public String vehiculosPorTipo () {
+		return 	"Automoviles: "  + Automovil.getCantidadAutomoviles() +
+				"\nCamionetas: " + Camioneta.getCantidadCamionetas() +
+				"\nCamiones: "   + Camion.getCantidadCamiones();
+	}
+	
 }
