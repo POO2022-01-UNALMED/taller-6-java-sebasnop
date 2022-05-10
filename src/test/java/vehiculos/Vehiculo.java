@@ -24,6 +24,7 @@ public class Vehiculo {
 		this.fabricante = fabricante;
 		
 		cantidadVehiculos++;
+		fabricante.agregarVenta();
 	}
 	
 	public String getPlaca() {
