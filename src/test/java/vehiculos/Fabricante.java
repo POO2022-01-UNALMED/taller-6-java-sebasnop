@@ -47,7 +47,18 @@ public class Fabricante {
 	}
 	
 	public static Fabricante fabricaMayorVentas () {
-		return new Fabricante("", new Pais(""));
+		Fabricante masVendedor = null;
+		int mayoresVentas = 0;
+		
+		for (int i = 0; i < fabricantes.size(); i++) {
+			if (fabricantes.get(i).ventas > mayoresVentas) {
+				masVendedor = null;
+				masVendedor = fabricantes.get(i);
+				mayoresVentas = fabricantes.get(i).ventas;
+			}
+	    }
+		
+		return masVendedor;
 	}
 	
 }
